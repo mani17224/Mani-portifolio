@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manikumar - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="animated-background-overlay"></div>
+
+  <div class="background-elements" id="background-elements">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <nav>
+    <div class="nav-logo">MANI KUMAR KROVVIDI</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+    </div>
+    <a href="#contact" class="nav-contact">Contact us</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+      <i class="fas fa-times"></i>
+    </div>
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#certifications" onclick="toggleMenu()">Certifications</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <div class="container" id="home">
+    <div class="content">
+      <h2>Hello, I'm MANI KUMAR KROVVIDI</h2>
+      <p>
+        I'm a Third-year engineering student passionate about Cyber Security and Block chain technolgy.
+        I specialize in  modern web development,UI/UX designer.This portfolio showcases
+        my technical journey, key projects, and certifications — enhanced visually through immersive 3D design.
+
+
+
+      </p>
+      <div class="buttons">
+        <button>Get Started</button>
+        <button>Learn More</button>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/krovvidi-manikumar-576676249" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/mani17224//" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="bg-main-container">
+      <div class="bg-main">
+        <spline-viewer url="https://prod.spline.design/BoWg-dch2T9e59sl/scene.splinecode"></spline-viewer>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="section-content-card">
+      <p>
+        I am a dedicated and curious second-year engineering student with a strong foundation in Cybersecurity, Blockchain technology, Web Development, and Mobile App Development. I enjoy solving real-world problems through creative thinking and the application of cutting-edge technologies, particularly in crafting intuitive user interfaces. I am actively seeking opportunities to contribute, learn, and grow within innovative teams that value creativity, collaboration, and technology.
+      </p>      
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="section-content-card">
+      <div class="skill-grid">
+        <div class="skill-item"><strong>Languages:</strong> Python, Java, SQL, </div>
+        <div class="skill-item"><strong>Frameworks:</strong> React Native, React.js</div>
+        <div class="skill-item"><strong>Technologies:</strong>Front-End Development, UI/UX, MObile app Development</div>
+        <div class="skill-item"><strong>Concepts:</strong> OOP</div>
+        <div class="skill-item"><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Postman, Figma</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="section-content-card project-list">
+      <div class="project-item">
+        <h3>Food Management Sector (Ongoing)</h3>
+        <p><strong>Technologies:</strong>Design: Figma
+                                        Frontend: React Native
+                                        DataBase: Firebase(Serverless, NoSQL Firestore)
+                                        Notifications: Firebase Cloud Messaging
+                                        Authentication: Firebase Authentication</p>
+        <ul>
+          <li>Approximately 74 million tonnes of food is wasted in India annually, accounting for 22% of the country's foodgrain output..</li>
+          <li>Despite this wastage, millions of Indians go to bed hungry every night.</li>
+         
+        </ul>
+      </div>
+      
+      <div class="project-item">
+        <h3>AI Proctoring System for Online Exams (Ongoing)</h3>
+        <p><strong>Technologies:</strong> Python, Flask, OpenCV, MediaPipe.</p>
+        <ul>
+          <li>Implemented Real-time webcam-based monitoring: eye gaze, multi-face, face clarity.</li>
+          <li>Responsive dark UI, modular backend, future ML cheat detection ready.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="section-content-card">
+      <div class="certification-list">
+        <div class="certification-item">AI for Beginners – HP Life</div>
+        <div class="certification-item">Introduction to Cyberseccurity – Cisco</div>
+        <div class="certification-item">Foundations of User Experience (UX) Design – Coursera</div>
+     
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="section-content-card">
+      <p>Have a question, opportunity, or collaboration in mind? Reach out using the form below:</p>
+      <form id="contactForm" class="contact-form" data-netlify="true" name="contact">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="messageModal" class="message-modal-overlay">
+    <div class="message-modal-content">
+      <span class="message-modal-close" id="closeModalBtn">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalMessage"></p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const overlay = document.getElementById('overlay');
+
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      overlay.classList.toggle('active');
+
+      if (mobileMenu.classList.contains('open')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('click', function(event) {
+      const mobileMenu = document.getElementById('mobileMenu');
+      const hamburger = document.querySelector('.hamburger');
+      const overlay = document.getElementById('overlay');
+
+      if (mobileMenu.classList.contains('open') &&
+          !mobileMenu.contains(event.target) &&
+          !hamburger.contains(event.target)) {
+        toggleMenu();
+      }
+    });
+
+    // Parallax Scrolling Script
+    document.addEventListener('DOMContentLoaded', () => {
+        const orb1 = document.querySelector('.orb-1');
+        const orb2 = document.querySelector('.orb-2');
+        const parallaxSpeed1 = 0.2; // How fast orb-1 moves relative to scroll
+        const parallaxSpeed2 = 0.15; // How fast orb-2 moves relative to scroll
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            // Apply a translate3d transform to leverage GPU acceleration
+            orb1.style.transform = `translate3d(0, ${scrolled * parallaxSpeed1}px, -2px) scale(3)`;
+            orb2.style.transform = `translate3d(0, ${scrolled * parallaxSpeed2}px, -2px) scale(3)`;
+        });
+    });
+
+    // NEW: Custom Message Modal Logic
+    const messageModal = document.getElementById('messageModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalMessage = document.getElementById('modalMessage');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    function showMessageModal(title, message, isError = false) {
+        modalTitle.textContent = title;
+        modalMessage.textContent = message;
+        messageModal.style.display = 'flex'; // Show the modal
+        document.body.style.overflow = 'hidden'; // Prevent scrolling while modal is open
+
+        // Optional: Change modal styling based on error/success
+        if (isError) {
+            modalTitle.style.color = '#ff6b6b'; // Red for errors
+            modalMessage.style.color = '#f8d7da';
+        } else {
+            modalTitle.style.color = '#8a2be2'; // Purple for success
+            modalMessage.style.color = '#e0e0e0';
+        }
+    }
+
+    function hideMessageModal() {
+        messageModal.style.display = 'none'; // Hide the modal
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Close modal when close button is clicked
+    closeModalBtn.addEventListener('click', hideMessageModal);
+
+    // Close modal when clicking outside the content area
+    messageModal.addEventListener('click', (event) => {
+        if (event.target === messageModal) {
+            hideMessageModal();
+        }
+    });
+
+    // NEW: Client-side form validation and submission for Netlify Forms
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission initially
+
+        const nameInput = this.elements.name;
+        const emailInput = this.elements.email;
+        const messageInput = this.elements.message;
+
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const message = messageInput.value.trim();
+
+        // Simple validation checks
+        if (name === '') {
+            showMessageModal('Validation Error', 'Please enter your name.', true);
+            nameInput.focus();
+            return;
+        }
+
+        if (email === '') {
+            showMessageModal('Validation Error', 'Please enter your email address.', true);
+            emailInput.focus();
+            return;
+        }
+
+        // Basic email format validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            showMessageModal('Validation Error', 'Please enter a valid email address.', true);
+            emailInput.focus();
+            return;
+        }
+
+        if (message === '') {
+            showMessageModal('Validation Error', 'Please enter your message.', true);
+            messageInput.focus();
+            return;
+        }
+
+        // If all validations pass, allow the form to submit natively.
+        // Netlify will intercept this submission and handle it.
+        this.submit();
+
+        // Show a success message immediately. Netlify processes the actual submission asynchronously.
+        showMessageModal('Message Sent!', 'Thank you for your message! Your details have been submitted.', false);
+
+        // Optionally, clear the form after successful submission
+        this.reset();
+    });
+  </script>
+</body>
+</html>
